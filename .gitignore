@@ -1,0 +1,4 @@
+*.swp
+*.backup
+__pycache__
+/testing/*

@@ -1,0 +1,21 @@
+CC = g++
+CFLAGS = -g -Wall -std=gnu++17
+SRCS = readtest.cpp src/fileIO.cpp
+PROG = reader
+
+LIBS =	-lopencv_core \
+		-lopencv_highgui \
+		-lopencv_imgproc
+
+OPENCV_LIB_PATH = /home/sylvanix/.ml37/lib/python3.7/site-packages/opencv/lib
+OPENCV_INC_PATH = /home/sylvanix/.ml37/lib/python3.7/site-packages/opencv/include/opencv4
+THIS_INC_PATH = ./include
+
+$(PROG):$(SRCS)
+	$(CC) $(CFLAGS) -o $(PROG) $(SRCS) $(LIBS) \
+	-L$(OPENCV_LIB_PATH) \
+	-I$(OPENCV_INC_PATH) \
+	-I$(THIS_INC_PATH)
+
+clean:
+	$(RM) $(PROG)
