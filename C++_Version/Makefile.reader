@@ -7,8 +7,8 @@ LIBS =	-lopencv_core \
 		-lopencv_highgui \
 		-lopencv_imgproc
 
-OPENCV_LIB_PATH = /home/sylvanix/.ml37/lib/python3.7/site-packages/opencv/lib
-OPENCV_INC_PATH = /home/sylvanix/.ml37/lib/python3.7/site-packages/opencv/include/opencv4
+OPENCV_LIB_PATH = /home/telemaque/.ml37/lib/python3.7/site-packages/opencv/lib
+OPENCV_INC_PATH = /home/telemaque/.ml37/lib/python3.7/site-packages/opencv/include/opencv4
 THIS_INC_PATH = ./include
 
 $(PROG):$(SRCS)
