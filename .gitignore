@@ -1,7 +1,0 @@
-*.swp
-*.backup
-.gitignore
-__pycache__
-/testing/*
-/BAK/*
-*_checkpoints
